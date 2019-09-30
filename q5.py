@@ -7,6 +7,27 @@
 # Your program should change the ranking of the team to 8 using only the class method.
 # Print out the class (should use your ```__str__``` method).
 
+# creating the class
+class SportsTeam:
+    def __init__(self, team_name, team_city, team_ranking):
+        self.team_name = team_name
+        self.team_city = team_city
+        self.team_ranking = team_ranking
+# rank changing method
+    def changeRank(self):
+        newRank = input('change the ranking to: ')
+        self.team_ranking = newRank
+        return newRank
+ # making the default string
+    def __str__(self):
+        myStr = f'The {self.team_name} are from {self.team_city} and they are ranked {self.team_ranking}'
+        return myStr
+    # new instance
+windy = SportsTeam('Bulls', 'Chicago', '2')
+
+print(windy)
+windy.changeRank()
+print(windy)
 
 # Example Output:
 # ```

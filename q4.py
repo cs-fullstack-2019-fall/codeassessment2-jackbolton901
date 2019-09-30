@@ -10,3 +10,13 @@
 
 # BIRD is longer than COW
 # ```
+def chk_strings(str1, str2):
+    if str1.len > str2.len:
+        return "true"
+    if str1.len < str2.len:
+        return "false"
+
+useStr1 =input("Enter a string: ")
+useStr2 =input("Enter a string: ")
+
+chk_strings(useStr1, useStr2)
